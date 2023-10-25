@@ -1,5 +1,5 @@
 import styles from "./style.module.scss"
-import Nav from  "./Nav"
+import Nav from  "./Navigation"
 
 function Header() {
   return (
