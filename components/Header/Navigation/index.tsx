@@ -3,7 +3,7 @@ import Link from "next/link"
 
 function index() {
 
-    type navObj = {
+    interface navObj {
         title: string;
         linkTo: string;
     }
@@ -19,7 +19,7 @@ function index() {
         }
     ]
 
-    let navLinkGen = (itm: Array<Object>) =>{
+    let navLinkGen = (itm: Array<navObj>) =>{
         return <>
             {
                 itm.map((val,i) => {
